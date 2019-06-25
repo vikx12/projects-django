@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+ {% load staticfiles  %}
+  <html>
+ <head>
+   <title>Test hello</title>
+    <link rel="stylesheet" href="{%static 'css/test1app.css' %}">   </head>
+    <body>
+      <div class="heading">
+        <h1>{{e}}</h1>
+        </div>
+
+    <div class="questionblock">
+        <div class="que">
+          <h2>{{que}}</h2>
+          {% if Level %}
+          {{Level}}
+          {% else %}
+          Level not defined
+          {% endif %}
+            </div>
+             <div class="options">
+                 <input type="radio" name="answer"><span>{{a}}</span>
+               </div>
+               <div class="options">
+                 <input type="radio" name="answer"><span>{{b}}</span>
+                  </div>
+                   <div class="options">
+                     <input type="radio" name="answer"><span>{{c}}</span>
+                    </div>
+                    <div class="options">
+                       <input type="radio" name="answer"/><span>{{d}}</span>
+                       </div>
+                        <div class="submit">
+                             <input type="submit" >
+                             </div>
+                           </div>
+                         {%lorem%}
+                       </div>
+                                                   </body>
+                          </html>
